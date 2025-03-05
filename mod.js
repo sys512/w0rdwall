@@ -1,4 +1,3 @@
-//console.log("modded script loaded!!!");
 (function() {
     var k = {};
     global.VEL = global.VEL || {};
@@ -418,11 +417,10 @@
         },
         //the next 2 functions check and add entries to the leaderboard
         onCheckLeaderboard: function(a, b, c, d) {
-            //console.log("leadeboard checked by modded script!!!");
             var e = "/leaderboardajax/getentryrank";
             var f = {};
-            f.score = b;
-            f.time = c;
+            f.score = 45083;
+            f.time = 19982;
             f.activityId = ServerModel.activityId;
             f.templateId = a;
             $.ajax({
