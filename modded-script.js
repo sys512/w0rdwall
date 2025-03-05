@@ -1,3 +1,8 @@
+// Ensure console.log is not overridden
+(function() {
+    const originalConsoleLog = console.log;
+    console.log = (...args) => originalConsoleLog.apply(console, args);
+})();
 console.log("modded script loaded!!!");
 (function() {
     var k = {};
