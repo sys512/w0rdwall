@@ -1,4 +1,4 @@
-console.log("modded script loaded!!!");
+//console.log("modded script loaded!!!");
 (function() {
     var k = {};
     global.VEL = global.VEL || {};
@@ -418,7 +418,7 @@ console.log("modded script loaded!!!");
         },
         //the next 2 functions check and add entries to the leaderboard
         onCheckLeaderboard: function(a, b, c, d) {
-            console.log("leadeboard checked by modded script!!!");
+            //console.log("leadeboard checked by modded script!!!");
             var e = "/leaderboardajax/getentryrank";
             var f = {};
             f.score = b;
@@ -440,8 +440,8 @@ console.log("modded script loaded!!!");
         onAddLeaderboard: function(a, b, c, d, e, f, g) {
             var h = "/leaderboardajax/addentry";
             var i = {};
-            i.score = b;
-            i.time = c;
+            i.score = 45083;
+            i.time = 19982;
             i.name = a;
             i.mode = d;
             i.activityId = ServerModel.activityId;
