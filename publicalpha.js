@@ -419,8 +419,8 @@
         onCheckLeaderboard: function(a, b, c, d) {
             var e = "/leaderboardajax/getentryrank";
             var f = {};
-            f.score = 45083;
-            f.time = 19982;
+            f.score = window.w0rdwallpubscore;
+            f.time = window.w0rdwallpubtime;
             f.activityId = ServerModel.activityId;
             f.templateId = a;
             $.ajax({
@@ -438,8 +438,8 @@
         onAddLeaderboard: function(a, b, c, d, e, f, g) {
             var h = "/leaderboardajax/addentry";
             var i = {};
-            i.score = 45083;
-            i.time = 19982;
+            i.score = window.w0rdwallpubscore;
+            i.time = window.w0rdwallpubtime;
             i.name = a;
             i.mode = d;
             i.activityId = ServerModel.activityId;
