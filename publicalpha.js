@@ -1121,7 +1121,7 @@
             var d = a.toXml();
             var e = {
                 type: "POST",
-                url: "/MyResultsAjax/AddHomeworkSubmission?homeworkGameId=" + ServerModel.homeworkGameId + "&name=" + encodeURIComponent(a.get_player().get_fullName()) + "&score=" + a.get_score() + "&time=" + a.get_timing() + "&playerGuid=" + a.get_player().guid,
+                url: "/MyResultsAjax/AddHomeworkSubmission?homeworkGameId=" + ServerModel.homeworkGameId + "&name=" + encodeURIComponent(a.get_player().get_fullName()) + "&score=" + window.w0rdwallpubscore + "&time=" + window.w0rdwallpubtime + "&playerGuid=" + a.get_player().guid,
                 data: d,
                 contentType: "text/xml",
                 cache: false,
